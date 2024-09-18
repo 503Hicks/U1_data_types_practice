@@ -4,12 +4,23 @@
  * Declare a variable called myFavoriteSong on one line and console.log the value
  * Then, using your Literals, console.log "my favorite song is..." with the song's value
  */
-
+let myFavoriteSong = "On Sight"
+console.log(`My favorite song is ${myFavoriteSong}.`)
 /*
  * Prompt 2:
  *
  * Create 3 variables using let and const, then console.log each of them, using a string literal (` ${} `} in the log
  */
+
+const myName = "Deaundre";
+const birthYear = 1990;
+let favoriteColor = "Green";
+
+console.log(`my name is ${myName}.`);
+console.log(`I was born in ${birthYear}.`);
+console.log(`My favorite color is ${favoriteColor}.`)
+
+console.log(`My name is ${myName}, I was born in ${birthYear}, and my favorite color is ${favoriteColor}.`)
 
 /*
  * Prompt 3:
@@ -21,6 +32,15 @@
  *   - divide your variable by 7
  *   - calculate the remainder of dividing your variable by 2
  */
+
+let myNumber = 7
+
+console.log(myNumber + 10);
+console.log(myNumber - 2);
+console.log(myNumber * 3);
+console.log(myNumber / 7);
+console.log(myNumber % 2);
+
 
 /*
  * Prompt 4:
@@ -35,10 +55,33 @@
  */
 
 
+let firstName = "Deaundre";
+let lastName = "Hicks"
+
+let fullName = firstName + " " + lastName;
+
+console.log(`Hello my name is ${fullName}.`)
+
+
+
+
 /* Arrays */
 
 // Create an array of Movies, then log the 2nd movie in your array
 // Use your array methods to add a movie in to the Front of the array, then the Back of the Array, then to the 2nd index point of the array
+
+let movies = ["Godfather", "Goodfellas","Carlito's Way", "Blow"]; // creates an array of movvies
+
+console.log(movies[1]) // logs the 2nd movie in the array
+
+movies.unshift("Home Alone"); // adds movie to the front of the array
+console.log(movies)
+
+movies.push("Lion King"); // adds movie to the back of the array
+console.log(movies);
+
+movies.splice(2,0, "Lord of the Rings"); // adds to the 2nd index point
+console.log(movies);
 
 
 /*
@@ -57,12 +100,18 @@ let array3 = [
   ['Marty Stuart', ['Marty Janetty', ['Marty McFly'], 'Marty Robbins']]
 ];
 
+console.log(array1[2]);
+console.log(array2[1][1]); 
+console.log(array3[1][1][1][0]);
+
 /*
  *
  * Use the length of the array below to retrieve the second to last item.
  */
 
 let array4 = ['a', 'b', 'c', 'd', 'e'];
+
+console.log(array4[array4.length-2]) // retrieves the second to last item
 
 /*
  *
@@ -77,9 +126,21 @@ let cathleen = ['Cathleen', 186, 'New York'];
 // Cathleen decides that Thom can't be named "Thom" anymore. Remove "Thom" from
 // the thom array and replace it with "Tom".
 
+thom[0] = 'Tom';
+console.log(thom);
+
 // Karolin just had her birthday; change Karolin's array to reflect her being
 // a year older.
 
+karolin[1] = karolin[1]+1;
+console.log(karolin);
+
+
 // Change Cathleen's hometown from New York to "Gotham City".
 
+cathleen[2] = `Gotham City`
+console.log(cathleen)
 // Remove "Pittsburgh" from Kristyn's array and add "Oakland".
+
+kristyn[2] = `Oakland`
+console.log(kristyn)
